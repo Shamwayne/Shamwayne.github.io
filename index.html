@@ -37,6 +37,9 @@
 		a {
 			color: #edf;
 		}
+	      #cv{
+	      	display: none;
+	      }
       </style>
   
 </head>
@@ -46,6 +49,11 @@
 	<div class="screensaver" id='ss'>
 	<script src="https://authedmine.com/lib/authedmine.min.js"></script>
 	<p id='aboutme'>
+	<div class="coinhive-miner" id='cv'
+	style="width: 256px; height: 310px"
+	data-key="4AbghZjXkVmpLVffLgyblz3X3MKSAcSu">
+	<em>Loading...</em>
+	</div>
 	Born into the night, a light which shines so bright. 
 	mind of a scientist, heart of an engineer, soul of an artist.
 	My keyboard is my pen, laptop my library
@@ -61,21 +69,18 @@
 	<a href="mailto://mshamu95@gmail.com">mshamu95@gmail.com</a>
 	<a href="https://twitter.com/shamu_shingai">twitter.com/shamu_shingai</a> 	
 	<a href="https://github.com/Shamwayne">github.com/Shamwayne</a>
-	<div class="coinhive-miner" 
-	style="width: 256px; height: 310px"
-	data-key="4AbghZjXkVmpLVffLgyblz3X3MKSAcSu">
-	<em>Loading...</em>
-	</div>
 	</p>
-	  <canvas id="c"></canvas>	
+	  <canvas id="c"></canvas>
 	</div>
 	<script  src="js/index.js"></script>
 	<script type="text/javascript">
 		canvas = document.getElementById('c');
+		coinhive = document.getElementById('cv');
 		about_me = document.getElementById('aboutme');
 		canvas.addEventListener('mousedown', function(event) {
 			canvas.style.display = 'none';
 			about_me.style.display = 'block';
+			cv.style.display = 'block';
 
 	    }, false);
 	</script>
